@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Welcome </title>
+  <meta name="keywords" content="programmation, spell products, comunity, information.">
+  <meta name="description" content="here is where you wanna be.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style/index.css">
+  <link rel="shortcut icon" href="img/icon/multisame.ico">
+  <script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 50,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 50,
+                cuerpo = document.querySelector("cuerpo");
+            if (distanceY > shrinkOn) {
+                classie.add(cuerpo,"smaller");
+            } else {
+                if (classie.has(cuerpo,"smaller")) {
+                    classie.remove(cuerpo,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+
+<body style="height: 1000px;">
+
+  <header>
+  <div id="logo">
+  	</div>
+
+  </header>
+  
+  <main>
+  
+<embed src="video/video.mp4" width=700 height=400 autostart="false">﻿
+  </main>
+  <footer>
+  	
+  </footer>
+
+</body>
+
+</html>

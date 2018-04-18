@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #0f0f0f;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: darkred;
+  -webkit-transition: height 1.3s;
+  -moz-transition: height 1.3s;
+  -ms-transition: height 1.3s;
+  -o-transition: height 1.3s;
+  transition: height 1.3s;
+}
+
+header div#logo {
+    display: inline-flex;
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    background-image: url("../img/img/multisame.png");
+    background-size: cover;
+
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-50%, -50%);
+
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s; }
+
+  header.smaller {
+  	width: 100vw;
+    height: 12vh;
+}
+  header.smaller div#logo {
+  	display: inline-flex;
+  	position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    background-image: url("../img/img/multisame.png");
+    background-size: cover;
+
+    margin-top: 0.7vh;
+    margin-left: 1vw;
+    transform: translate(0,0);
+
+    animation: mymove 2s;
+
+    cursor: pointer;
+}
+
+@keyframes mymove {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+}
+
+main 
+{
+  margin-top: 70%;
+  margin-right: 50%;
+  transform: translateY(50%);
+  transform: translateX(50%);
+}
+}
